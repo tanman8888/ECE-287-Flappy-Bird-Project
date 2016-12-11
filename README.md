@@ -8,7 +8,7 @@ Tanner McWhorter,Casey Killeen
 
 A Flappy Bird inspired obstacle dodging game.
 
-A short demistration is show in the link below.
+A short demistration is show in the following link:
 https://www.youtube.com/watch?v=ybvcwc43neQ
 
 Project Description:
