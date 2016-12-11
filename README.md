@@ -8,6 +8,9 @@ Tanner McWhorter,Casey Killeen
 
 A Flappy Bird inspired obstacle dodging game.
 
+A short demistration is show in the link below.
+https://www.youtube.com/watch?v=ybvcwc43neQ
+
 Project Description:
 
 Our project was to create a version of the notorious flappy bird game in hardware. Flappy Bird is a phone game that consists of a bird that is constantly falling, unless there is user input, and the bird needs to make it through each “hole” between the pipes. We wanted a fairly simple game that tested our ability to write Verilog. The benefit of Flappy Bird is that there is only one input to play the game, however we added inputs for pause and reset. There were three main problems that we encountered while working on this problem. First we had to come up with a way to continually generate walls that the bird had to fly through. Second, we needed a way to detect collision. Third, we wanted to find a way to create the hole positions in a way that wasn’t the same each time. 
