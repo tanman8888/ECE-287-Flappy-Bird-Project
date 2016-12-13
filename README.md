@@ -40,11 +40,9 @@ We received it from Isaac Steiger
 input keydata;
 input keyclk;
 reg [7:0] keycode;
-
 parameter idle    = 2'b01;
 parameter receive = 2'b10;
 parameter ready   = 2'b11;
-
 reg [7:0] previousKey; 
 reg [1:0]  state=idle;
 reg [15:0] rxtimeout=16'b0000000000000000;
@@ -52,12 +50,9 @@ reg [10:0] rxregister=11'b11111111111;
 reg [1:0]  datasr=2'b11;
 reg [1:0]  clksr=2'b11;
 reg [7:0]  rxdata;
-
-
 reg datafetched;
 reg rxactive;
 reg dataready;
-
 always @(posedge clk ) 
 begin 
   if(datafetched==1)
@@ -69,18 +64,13 @@ begin
 	 previousKey <=rxdata;
   end
 end  
-  
 always @(posedge clk ) 
 begin 
   rxtimeout<=rxtimeout+1;
   datasr <= {datasr[0],keydata};
   clksr  <= {clksr[0],keyclk};
-
-
   if(clksr==2'b10)
     rxregister<= {datasr[1],rxregister[10:1]};
-
-
   case (state) 
     idle: 
     begin
@@ -95,7 +85,6 @@ begin
         rxactive<=1;
       end   
     end
-    
     receive:
     begin
       if(rxtimeout==50000)
@@ -108,7 +97,6 @@ begin
         datafetched<=1;
       end
     end
-    
     ready: 
     begin
       if(datafetched==1)
