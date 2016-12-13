@@ -36,9 +36,10 @@ Citations:
 //keyboard
 From Funkheld on http://www.alteraforum.com/forum/showthread.php?t=46549
 We received it from Isaac Steiger
-  input keydata;
-  input keyclk;
-  reg [7:0] keycode;
+
+input keydata;
+input keyclk;
+reg [7:0] keycode;
 
 parameter idle    = 2'b01;
 parameter receive = 2'b10;
