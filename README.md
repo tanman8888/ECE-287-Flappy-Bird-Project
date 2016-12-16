@@ -36,8 +36,10 @@ Citations:
 //keyboard
 From Funkheld on http://www.alteraforum.com/forum/showthread.php?t=46549
 We received it from Isaac Steiger
+
 https://github.com/steigeia/287_paint
 
 
 We received our VGA module from Parth Patel, Ian Baker, Yi Zhan.
+
 https://github.com/parthbarca08/ECE_287_Final_Project
